@@ -1,11 +1,10 @@
 <?php
 
 use Symfony\CS\FixerInterface;
-
+    
 $finder = Symfony\CS\Finder\DefaultFinder::create()
     ->notName('LICENSE')
     ->notName('README.md')
-    ->notName('.php_cs')
     ->notName('composer.*')
     ->notName('phpunit.xml*')
     ->notName('*.phar')
